@@ -10,6 +10,7 @@ public class Main : MonoBehaviour
     private TouchScreenKeyboard keyboard;
     public SpriteRenderer spriteRenderer;
     public Sprite cat;
+    public Sprite apple;
     Color blue = Color.blue;
     Color red = Color.red;
     Color yellow = Color.yellow;
@@ -18,8 +19,7 @@ public class Main : MonoBehaviour
     Color white = Color.white;
     void Start()
     {
-        cam = GetComponent<Camera>();  
-       
+        cam = GetComponent<Camera>();         
     }
 
     void Update ()
@@ -38,6 +38,7 @@ public class Main : MonoBehaviour
         if (inputText=="cat")
         {
            spriteRenderer.sprite = cat; 
+           vocab.transform.position = new Vector2(1.73f, -3.48f);
         }
         // colours
         else if (inputText=="blue")
@@ -66,7 +67,8 @@ public class Main : MonoBehaviour
         }
         else if (inputText=="apple")
         {
-             spriteRenderer.sprite = cat;  
+            spriteRenderer.sprite = apple;  
+            vocab.transform.position = new Vector2(-2.4f, 2);
         }              
     }
 }
