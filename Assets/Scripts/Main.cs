@@ -17,58 +17,75 @@ public class Main : MonoBehaviour
     Color green = Color.green;
     Color black = Color.black;
     Color white = Color.white;
+
+    public InputField inputField;
+    bool appleOnScreen;
     void Start()
     {
-        cam = GetComponent<Camera>();         
+        // cam = GetComponent<Camera>();
     }
 
-    void Update ()
-    {   
-        if(Input.touchCount > 0)
-        {
-            keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, true);
-        }
-    }
 
-    void OnGUI()
+    public void CheckButton()
     {
-        if (keyboard != null)
-            inputText = keyboard.text;
+        var fairy = GameObject.Find("Fairy");
+        Fairy fairyScript = fairy.GetComponent<Fairy>();
 
-        if (inputText=="cat")
+        if (inputField.text == "apple")
         {
-           spriteRenderer.sprite = cat; 
-           vocab.transform.position = new Vector2(1.73f, -3.48f);
+            spriteRenderer.sprite = apple;
+            vocab.transform.position = new Vector2(-0.033f, 1.848f);
+            fairyScript.Animation("isApple");
+            appleOnScreen = true;
+        }
+
+        else if (inputField.text == "eat")
+        {
+            if (appleOnScreen)
+            {
+                vocab.transform.position = new Vector2(-0.128f, 2.941f);
+                fairyScript.Animation("isEat");
+            }
+            else
+            {
+                // shake head
+            }
+        }
+
+        else if (inputField.text == "cat")
+        {
+            appleOnScreen = false;
+            spriteRenderer.sprite = cat;
+            vocab.transform.position = new Vector2(1.73f, -3.48f);
+
+            fairyScript.NoAnimation("isEat");
+            fairyScript.NoAnimation("isApple");
         }
         // colours
-        else if (inputText=="blue")
+        else if (inputField.text == "blue")
         {
-            cam.backgroundColor = blue;   
+            cam.backgroundColor = blue;
         }
-         else if (inputText=="red")
+        else if (inputField.text == "red")
         {
-            cam.backgroundColor = red;   
+            cam.backgroundColor = red;
         }
-         else if (inputText=="yellow")
+        else if (inputField.text == "yellow")
         {
-            cam.backgroundColor = yellow;   
+            cam.backgroundColor = yellow;
         }
-         else if (inputText=="green")
+        else if (inputField.text == "green")
         {
-            cam.backgroundColor = green;   
+            cam.backgroundColor = green;
         }
-        else if (inputText=="black")
+        else if (inputField.text == "black")
         {
-            cam.backgroundColor = black;   
+            cam.backgroundColor = black;
         }
-         else if (inputText=="white")
+        else if (inputField.text == "white")
         {
-            cam.backgroundColor = white;   
+            cam.backgroundColor = white;
         }
-        else if (inputText=="apple")
-        {
-            spriteRenderer.sprite = apple;  
-            vocab.transform.position = new Vector2(-2.4f, 2);
-        }              
+
     }
 }
