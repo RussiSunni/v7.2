@@ -9,7 +9,7 @@ public class Main : MonoBehaviour
     public GameObject vocab;
     private TouchScreenKeyboard keyboard;
     public SpriteRenderer spriteRenderer;
-    public Sprite cat;
+    public Sprite cat, duck;
     public Sprite apple;
     Color blue = Color.blue;
     Color red = Color.red;
@@ -57,6 +57,15 @@ public class Main : MonoBehaviour
             appleOnScreen = false;
             spriteRenderer.sprite = cat;
             vocab.transform.position = new Vector2(1.73f, -3.48f);
+
+            fairyScript.NoAnimation("isEat");
+            fairyScript.NoAnimation("isApple");
+        }
+        else if (inputField.text == "duck")
+        {
+            appleOnScreen = false;
+            spriteRenderer.sprite = duck;
+            vocab.transform.position = new Vector2(0.9f, -2.53f);
 
             fairyScript.NoAnimation("isEat");
             fairyScript.NoAnimation("isApple");
