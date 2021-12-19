@@ -14,6 +14,4 @@ public class Fairy : MonoBehaviour
     {
         animator.SetBool(word, false);
     }
-
-
 }

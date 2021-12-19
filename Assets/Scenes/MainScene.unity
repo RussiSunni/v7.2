@@ -481,7 +481,10 @@ MonoBehaviour:
   vocab: {fileID: 0}
   spriteRenderer: {fileID: 0}
   cat: {fileID: 0}
+  chicken: {fileID: 0}
+  dog: {fileID: 0}
   duck: {fileID: 0}
+  frog: {fileID: 0}
   apple: {fileID: 0}
   inputField: {fileID: 0}
 --- !u!20 &519420031
@@ -1116,7 +1119,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4, y: 4.15}
+  m_Size: {x: 4, y: 4.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1130,7 +1133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018392366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9, y: -2.53, z: 0}
+  m_LocalPosition: {x: 0.92, y: -2.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1323,7 +1326,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2010432499}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 78.531}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13038.531}
 --- !u!1 &1203757373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,7 +1551,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2010432497}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2068.155}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3868.155}
 --- !u!1 &1834198932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,7 +1695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7396880078710999718, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -175.192
+      value: -177.625
       objectReference: {fileID: 0}
     - target: {fileID: -7354181295865219448, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1708,7 +1711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7354181295865219448, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -180.351
+      value: -181.45
       objectReference: {fileID: 0}
     - target: {fileID: -7065694581965989821, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_RootOrder
@@ -1932,7 +1935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3927570860988632906, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 131.177
+      value: 130.216
       objectReference: {fileID: 0}
     - target: {fileID: 3934537661671223099, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_Name
@@ -2008,7 +2011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7147285279733929589, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -163.86
+      value: -171.273
       objectReference: {fileID: 0}
     - target: {fileID: 7327379460543762106, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2052,7 +2055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8285342381094145952, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.049019437
+      value: -0.04901944
       objectReference: {fileID: 0}
     - target: {fileID: 8285342381094145952, guid: 7ff5f73a212d1b34e8fd3b8a6efd4c0d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2139,7 +2142,10 @@ MonoBehaviour:
   vocab: {fileID: 1018392366}
   spriteRenderer: {fileID: 1018392367}
   cat: {fileID: 21300000, guid: 21360f3235107fc4fac09a084cdf3c8c, type: 3}
+  chicken: {fileID: 21300000, guid: 9ea1ed9127d90a04b8814588e6a3ebe5, type: 3}
+  dog: {fileID: 21300000, guid: a15cdfdf0162aa742bd0e0f1f98de09f, type: 3}
   duck: {fileID: 21300000, guid: f25c3de9c32167b48a3f8af05a9350ff, type: 3}
+  frog: {fileID: 21300000, guid: 6b1a26b220059bc40b0e91f899e36f5e, type: 3}
   apple: {fileID: 21300000, guid: 583a29bce7456914197d7fb4a47b8d41, type: 3}
   inputField: {fileID: 780284637}
 --- !u!4 &2110878981
